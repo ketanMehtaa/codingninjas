@@ -29,3 +29,9 @@ public class Solution {
         return help(pre,in,0,in.length-1);
 	}
 }
+// Time Complexity: O(n^2). Worst case occurs when tree is
+// left skewed. Example Preorder and Inorder traversals for
+// worst case are {A, B, C, D} and {D, C, B, A}.
+// Efficient Approach : 
+// We can optimize the above solution using hashing (unordered_map in C++ or HashMap in Java). We store indexes of inorder traversal in a hash table. So that search can be done O(1) time.
+// filter_none
