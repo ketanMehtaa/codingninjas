@@ -12,9 +12,11 @@ public class Solution {
                 break;
             }
         }
+// if root is not present
         if(index==-1){
           return null;  
         } 
+/* If this node has no children then return */
          if (ins==ine){
             return ans; 
          }
