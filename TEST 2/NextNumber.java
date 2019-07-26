@@ -73,3 +73,9 @@ public class Solution {
 // 9 9 9 -1
 // Sample Output 1 :
 // 1 0 0 0 
+// concept 
+// the main concept for this question is that we first reverse the linked list and the do the process 
+// and after it we again reverse the linked list
+
+
+
