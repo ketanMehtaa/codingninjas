@@ -1,6 +1,6 @@
 public class Dequeue {
     
-    static final int MAX = 9; 
+    static final int MAX = 10; 
     int  arr[]; 
     int  front; 
     int  rear; 
