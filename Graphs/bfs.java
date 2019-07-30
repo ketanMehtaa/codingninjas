@@ -34,6 +34,8 @@ public class Solution{
         int edges[][]=new int[n][n];
          
         for(int i=0;i<e;i++){
+		// fv=first vertice
+		// sv=second vertice
             int fv=s.nextInt();
             int sv=s.nextInt();
             edges[fv][sv]=1;
