@@ -15,8 +15,7 @@ public  static int minCostPathDP(int arr[][]){
 		
 		for(int i = m - 2; i >= 0; i--){
 			for(int j = n - 2; j >= 0; j--){
-				storage[i][j] = arr[i][j] +  Math.min(storage[i][j + 1], 
-						Math.min(storage[i + 1][j + 1], storage[i + 1][j]));
+			     storage[i][j] = arr[i][j] +  Math.min(storage[i][j + 1],Math.min(storage[i + 1][j + 1], storage[i + 1][j]));
 			}
 		}
 		return storage[0][0];
