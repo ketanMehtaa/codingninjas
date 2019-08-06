@@ -1,4 +1,8 @@
-
+// in this approach we will go from last element to first 
+// example
+// 5 2 6 3 4 5
+// first we add 3+5 and add it to storage at 3 place
+// now we add and repate
 public class Solution {
     public static int help(int arr[], int n,int i){
         int storage[]=new int[arr.length];
