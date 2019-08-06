@@ -13,11 +13,10 @@ public class EditDistance {
 		for(int i = 1; i <= m; i++){
 			for(int j = 1; j <= n; j++){
 				if(s.charAt(m - i) == t.charAt(n - j)){
-        // last m-i character and n-j th character
+                // last m-i character and n-j th character
 					storage[i][j] = storage[i - 1][j - 1];
 				}else{
-					storage[i][j] = 1 + Math.min(storage[i][j - 1], 
-							Math.min(storage[i - 1][j], storage[i - 1][j - 1]));
+					storage[i][j] = 1 + Math.min(storage[i][j - 1], Math.min(storage[i - 1][j], storage[i - 1][j - 1]));
 				}
 			}
 		}
