@@ -3,16 +3,18 @@ public class Solution {
 	public static void insert(int input[],int childindex){
 	int parentIndex = (childindex - 1)/2;
 	 while(childindex > 0){
-		if(input[childindex] < input[parentIndex]){
+		if(input[childindex] < input[parentIndex])
+		{
 			int temp = input[childindex];
 			input[childindex]=input[parentIndex];
-            input[parentIndex]=temp;
+                        input[parentIndex]=temp;
 			childindex = parentIndex;
 			parentIndex = (childindex - 1) / 2;
 		}
-        else{
+                 else
+		 {
 			return;
-		}	
+		 }	
      }
 	}
 
@@ -49,12 +51,12 @@ public class Solution {
 		        	if(minIndex == index){
 		        		break;
 		        	}else{
-                    int temp1 = input[index];
-                    input[index]=input[minIndex];
-                    input[minIndex]=temp1;
-			    	index = minIndex;
-			    	leftChildIndex = 2 * index + 1;
-			    	rightChildIndex = 2 * index + 2;
+                                 int temp1 = input[index];
+                                 input[index]=input[minIndex];
+                                 input[minIndex]=temp1;
+			    	 index = minIndex;
+			    	 leftChildIndex = 2 * index + 1;
+			    	 rightChildIndex = 2 * index + 2;
 			}
 		}
     j--;
