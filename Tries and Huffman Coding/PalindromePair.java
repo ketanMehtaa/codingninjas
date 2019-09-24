@@ -77,12 +77,13 @@ public class Trie {
             return false;
         return search(chld,word.substring(1));
     }
-    public String reverse(String s)
-    {
-         StringBuilder input1 = new StringBuilder(); 
-         input1.append(s); 
-        input1 = input1.reverse(); 
-        String s1=input1.toString();
-        return s1;
+    private String reverse(String i){
+        String newstr = "";
+        while (i.length() != 0){
+            newstr = i.charAt(0) + newstr;
+            i = i.substring(1);
+        }
+        //System.out.println(newstr);
+        return newstr;
     }
 }
